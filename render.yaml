@@ -2,7 +2,7 @@ services:
   - type: web
     name: charnamrit-staff-control
     runtime: docker
-    plan: starter
+    plan: free
     region: singapore
     dockerfilePath: ./Dockerfile
     dockerContext: .
@@ -27,7 +27,7 @@ services:
 
 databases:
   - name: charnamrit-staff-db
-    plan: starter
+    plan: free
     region: singapore
     databaseName: staffapp
     user: staffapp
