@@ -5,4 +5,4 @@ RUN npm install --omit=dev
 COPY . .
 ENV NODE_ENV=production
 EXPOSE 3000
-CMD ["sh", "-c", "node scripts/migrate.js && node scripts/init-admin.js && node server.js"]
+CMD ["node", "server.js"]
